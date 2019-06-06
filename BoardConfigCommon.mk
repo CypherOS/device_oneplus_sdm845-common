@@ -85,6 +85,10 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# AOSCP hardware
+JAVA_SOURCE_OVERLAYS := \
+    hardware.aoscp.controllers|$(COMMON_PATH)/devicehw|**/*.java
+
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
