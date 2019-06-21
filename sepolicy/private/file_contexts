@@ -14,6 +14,7 @@
 
 # HALs
 /system/bin/hw/android\.hardware\.light@2\.0-service\.oneplus_sdm845    u:object_r:hal_light_sdm845_exec:s0
+/system/bin/hw/aoscp\.biometrics\.fingerprint\.inscreen@1.0-service\.oneplus_sdm845    u:object_r:hal_inscreen_fingerprint_sdm845_exec:s0
 /system/bin/hw/aoscp\.displayengine@1\.0-service\.oneplus_sdm845    u:object_r:hal_displayengine_sdm845_exec:s0
 /system/bin/hw/aoscp\.touch@1\.0-service\.oneplus_sdm845            u:object_r:hal_touch_sdm845_exec:s0
 
