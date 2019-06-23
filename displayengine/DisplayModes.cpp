@@ -29,7 +29,7 @@ namespace implementation {
 
 static constexpr const char* kModePath =
     "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/display_mode";
-static constexpr const char* kDefaultPath = "/data/system/default_display_mode";
+static constexpr const char* kDefaultPath = "/data/misc/display/default_display_mode";
 
 const std::map<int32_t, DisplayModes::ModeInfo> DisplayModes::kModeMap = {
     {0, {"Standard", "default"}},
@@ -54,6 +54,8 @@ DisplayModes::DisplayModes() : mDefaultModeId(0) {
             break;
         }
     }
+
+    setDisplayMode(mDefaultModeId, false);
 }
 
 // Methods from ::vendor::aoscp::displayengine::V1_0::IDisplayModes follow.

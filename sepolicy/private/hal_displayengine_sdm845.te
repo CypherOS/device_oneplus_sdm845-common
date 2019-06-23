@@ -7,6 +7,6 @@ init_daemon_domain(hal_displayengine_sdm845)
 # Talk to the binder device node
 allow hal_displayengine_sdm845 binder_device:chr_file rw_file_perms;
 
-# Allow DisplayEngine to store files under /data/display and access them
-allow hal_displayengine_sdm845 display_data_file:dir rw_dir_perms;
-allow hal_displayengine_sdm845 display_data_file:file create_file_perms;
+# Allow DisplayEngine to store files under /data/misc/display and access them
+allow hal_displayengine_sdm845 display_misc_file:dir rw_dir_perms;
+allow hal_displayengine_sdm845 display_misc_file:file create_file_perms;
