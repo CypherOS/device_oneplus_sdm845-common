@@ -85,6 +85,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     aoscp.displayengine@1.0-service.oneplus_sdm845
 
+# Touch
+PRODUCT_PACKAGES += \
+    aoscp.touch@1.0-service.oneplus_sdm845
+
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_profiles_vendor.xml:system/etc/media_profiles_vendor.xml
