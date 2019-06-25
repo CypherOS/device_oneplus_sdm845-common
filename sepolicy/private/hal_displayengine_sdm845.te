@@ -10,3 +10,6 @@ allow hal_displayengine_sdm845 binder_device:chr_file rw_file_perms;
 # Allow DisplayEngine to store files under /data/misc/display and access them
 allow hal_displayengine_sdm845 display_misc_file:dir rw_dir_perms;
 allow hal_displayengine_sdm845 display_misc_file:file create_file_perms;
+
+# Grant access over DisplayEngine tuneables
+allow hal_displayengine_sdm845 sysfs_displayengine_tuneable:file rw_file_perms;
