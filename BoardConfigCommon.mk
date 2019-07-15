@@ -86,10 +86,6 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
-# AOSCP hardware
-JAVA_SOURCE_OVERLAYS := \
-    hardware.aoscp.controllers|$(COMMON_PATH)/devicehw|**/*.java
-
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
 
